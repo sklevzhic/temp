@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Levande</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Levande - Салон красоты</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    </head>
+</head>
+
 <body>
-    <header class="header">
+    <header class="header shadow">
         <div class="container">
             <nav class="header__navigation">
                 <a class="header__logo" href="">
@@ -21,14 +22,19 @@
                 <a id="toggler" class="menu__toggler" href="#"><span><i class="fa fa-bars fa-lg" aria-hidden="true"
                   title="Toggle navigation"></i></span></a>
                 <a class="header__phone" href="tel:+37127500410">+371 275-00-410</a>
+
                 <ul class="navigation__items">
-                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#">Услуги</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Make-up школа</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="#services">Услуги</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#make-up">Make-up школа</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
                 </ul>
                 <ul class="lang__items">
-                    <li class="lang__item"><a class="lang__link lang__link--lt shadow" href="#"></a></li>
-                    <li class="lang__item"><a class="lang__link lang__link--rus shadow" href="#"></a></li>
+                    <li class="lang__item">
+                        <a class="lang__link lang__link--lt shadow" href="#"></a>
+                    </li>
+                    <li class="lang__item">
+                        <a class="lang__link lang__link--rus shadow" href="#"></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -39,171 +45,256 @@
                 <div class="container">
                     <div class="hero__content">
                         <h1 class="hero__title">Салон красоты <span class="hidden">Levande</span></h1>
-                        <p class="hero__subtitle">riga, citadeles iela 1a<br>
-                                (вход с улицы muitas)</p>
-                        <a class="button hero__button" href="#">Записаться</a>
+                        <p class="hero__subtitle">riga, citadeles iela 1a
+                            <br> (вход с улицы muitas)</p>
+                        <a class="button hero__button shadow" href="#">Записаться</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="services title-line">
-          <div class="container">
-            <h2 class="services__title section__title">УСЛУГИ <span class="section__title-lt">services</span></h2>
-            <ul class="nav nav-tabs services__item" id="myTab" role="tablist">
-                <li class="services__item nav-item">
-                  <a class="nav-link active services__list services__list--right services__list--first" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
-                      <img class="services__img" src="./assets/img/services/serv1.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
-                      <i class="fas faCircle fa-chevron-right"></i>
-                      <h5 class="services__name">ПАРИКМАХЕРСКИЕ<br>УСЛУГИ</h5>
-                  </a>
-                </li>
-                <li class="services__item nav-item">
-                  <a class="nav-link services__list services__list--left services__list--second" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-                      <img class="services__img" src="./assets/img/services/serv2.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
-                      <i class="fas faCircle fa-chevron-right"></i>
-                      <h5 class="services__name">Услуги для <br> рук и ног</h5>
-                  </a>
-                </li>
-                <li class="services__item nav-item">
-                    <a class="nav-link services__list services__list--right services__list--third" id="body-tab" data-toggle="tab" href="#body" role="tab" aria-controls="body" aria-selected="false">
-                        <img class="services__img" src="./assets/img/services/serv3.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
-                        <i class="fas faCircle fa-chevron-right"></i>
-                        <h5 class="services__name">Процедуры <br> для тела</h5>
-                    </a>
-                </li>
-                <li class="services__item nav-item">
-                    <a class="nav-link services__list services__list--left services__list--fourth" id="face-tab" data-toggle="tab" href="#face" role="tab" aria-controls="face" aria-selected="true">
-                        <img class="services__img" src="./assets/img/services/serv4.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
-                        <i class="fas faCircle fa-chevron-right"></i>
-                        <h5 class="services__name">Процедуры <br> для лица</h5>
-                    </a>
-                  </li>
-                  <li class="services__item nav-item">
-                    <a class="nav-link services__list services__list--right services__list--fifth" id="waxing-tab" data-toggle="tab" href="#waxing" role="tab" aria-controls="waxing" aria-selected="false">
-                        <img class="services__img" src="./assets/img/services/serv5.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
-                        <i class="fas faCircle fa-chevron-right"></i>
-                        <h5 class="services__name">Ваксация</h5>
-                    </a>
-                  </li>
-                  <li class="services__item nav-item">
-                      <a class="nav-link services__list services__list--left services__list--sixth" id="eyebrow-tab" data-toggle="tab" href="#eyebrow" role="tab" aria-controls="eyebrow" aria-selected="false">
-                          <img class="services__img" src="./assets/img/services/serv6.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
-                          <i class="fas faCircle fa-chevron-right"></i>
-                          <h5 class="services__name">Брови и ресницы</h5>
-                      </a>
-                  </li>
+        <section class="services title-line"><a class="anchor" name="services"></a>
+            <div class="container">
+                <h2 class="services__title section__title">УСЛУГИ <span class="section__title-lt">services</span></h2>
+                <ul id="tabs" class="nav nav-tabs services__item" role="tablist">
+                    <li class="nav-item services__item">
+                        <a id="tab-A" href="#pane-A" class="nav-link services__list services__list--right services__list--first" data-toggle="tab" role="tab">
+                            <img class="services__img" src="./assets/img/services/serv1.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
+                            <i class="fas faCircle fa-chevron-right"></i>
+                            <p class="services__name">ПАРИКМАХЕРСКИЕ<br>УСЛУГИ</p>
+                        </a>
+                    </li>
+                    <li class="nav-item services__item">
+                        <a id="tab-B" href="#pane-B" class="nav-link services__list services__list--left services__list--second" data-toggle="tab" role="tab">
+                            <img class="services__img" src="./assets/img/services/serv2.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
+                            <i class="fas faCircle fa-chevron-right"></i>
+                            <p class="services__name">Услуги для <br> рук и ног</p>
+                        </a>
+                    </li>
+                    <li class="nav-item services__item">
+                        <a id="tab-C" href="#pane-C" class="nav-link services__list services__list--right services__list--third" data-toggle="tab" role="tab">
+                            <img class="services__img" src="./assets/img/services/serv3.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
+                            <i class="fas faCircle fa-chevron-right"></i>
+                            <p class="services__name">Процедуры <br> для тела</p>
+                        </a>
+                    </li>
+                    <li class="nav-item services__item">
+                        <a id="tab-D" href="#pane-D" class="nav-link services__list services__list--left services__list--fourth" data-toggle="tab" role="tab">
+                            <img class="services__img" src="./assets/img/services/serv4.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
+                            <i class="fas faCircle fa-chevron-right"></i>
+                            <p class="services__name">Процедуры <br> для лица</p>
+                        </a>
+                    </li>
+                    <li class="nav-item services__item">
+                        <a id="tab-E" href="#pane-E" class="nav-link services__list services__list--right services__list--fifth" data-toggle="tab" role="tab">
+                            <img class="services__img" src="./assets/img/services/serv5.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
+                            <i class="fas faCircle fa-chevron-right"></i>
+                            <p class="services__name">Ваксация</p>
+                        </a>
+                    </li>
+                    <li class="nav-item services__item">
+                        <a id="tab-F" href="#pane-F" class="nav-link services__list services__list--left services__list--sixth" data-toggle="tab" role="tab">
+                            <img class="services__img" src="./assets/img/services/serv6.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
+                            <i class="fas faCircle fa-chevron-right"></i>
+                            <p class="services__name">Брови и ресницы</p>
+                        </a>
+                    </li>
+                </ul>
+                <div id="content" class="tab-content" role="tablist">
+                    <div id="pane-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
+                        <div class="card-header" role="tab" id="heading-A">
+                            <a data-toggle="collapse" class="services__list services__list--right services__list--first" href="#collapse-A" data-parent="#content" aria-expanded="true" aria-controls="collapse-A">
+                                <img class="services__img" src="./assets/img/services/serv1.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
+                                <i class="fas faCircle fa-chevron-right"></i>
+                                <p class="services__name">ПАРИКМАХЕРСКИЕ<br>УСЛУГИ</p>
+                            </a>
+                        </div>
+                        <div id="collapse-A" class="collapse services__tabs" role="tabpanel" aria-labelledby="heading-A">
+                            <div class="card-body services__tab services__tab--first">
+                                <h3 class="tab__name section__title"><a name="home">ПАРИКМАХЕРСКИЕ УСЛУГИ</a></h3>
+                                <ul class="tab__items">
+                                    <li class="tab__item">Стрижка волос</li>
+                                    <li class="tab__item">Покраска волос</li>
+                                    <li class="tab__item">Покраска прядей волос</li>
+                                    <li class="tab__item">Химическая завивка</li>
+                                    <li class="tab__item">Вечерняя и свадебная прическа</li>
+                                    <li class="tab__item">Плетение французских косичек</li>
+                                    <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
+                                    <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
+                                    <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
+                                </ul>
+                                <a class="button services__button services__button--white shadow" href="#">Узнать цены</a>
+                                <a class="button services__button shadow" href="#">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
 
-              </ul>
-              <div class="tab-content services__tabs" id="myTabContent">
-                  <div class="tab-pane services__tab services__tab--first tab__items active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <h3 class="tab__name section__title">ПАРИКМАХЕРСКИЕ УСЛУГИ</h3>
-                    <ul class="tab__items">
-                        <li class="tab__item">Стрижка волос</li> 
-                        <li class="tab__item">Покраска волос</li>
-                        <li class="tab__item">Покраска прядей волос</li>
-                        <li class="tab__item">Химическая завивка</li>
-                        <li class="tab__item">Вечерняя и свадебная прическа</li>
-                        <li class="tab__item">Плетение французских косичек</li>
-                        <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
-                        <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
-                        <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
-                    </ul>
-                    <a class="button services__button services__button--white" href="#">Узнать цены</a>
-                    <a class="button services__button" href="#">Записаться</a>
-                  </div>
-                  <div class="tab-pane services__tab services__tab--second fade" id="profile" name="profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <h3 class="tab__name section__title">Услуги для рук и ног</h3>
-                    <ul class="tab__items">
-                        <li class="tab__item">Стрижка волос1</li> 
-                        <li class="tab__item">Покраска волос1</li>
-                        <li class="tab__item">Покраска прядей волос1</li>
-                        <li class="tab__item">Химическая завивка</li>
-                        <li class="tab__item">Вечерняя и свадебная прическа</li>
-                        <li class="tab__item">Плетение французских косичек</li>
-                        <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
-                        <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
-                        <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
-                    </ul>
-                    <a class="button services__button services__button--white" href="#">Узнать цены</a>
-                    <a class="button services__button" href="#">Записаться</a>
-                  </div>
-                  <div class="tab-pane services__tab services__tab--third fade" id="body" name="body" role="tabpanel" aria-labelledby="body-tab">
-                      <h3 class="tab__name section__title">Процедуры для тела</h3>
-                    <ul class="tab__items">
-                        <li class="tab__item">Стрижка волос1</li> 
-                        <li class="tab__item">Покраска волос1</li>
-                        <li class="tab__item">Покраска прядей волос1</li>
-                        <li class="tab__item">Химическая завивка</li>
-                        <li class="tab__item">Вечерняя и свадебная прическа</li>
-                        <li class="tab__item">Плетение французских косичек</li>
-                        <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
-                        <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
-                        <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
-                    </ul>
-                    <a class="button services__button services__button--white" href="#">Узнать цены</a>
-                    <a class="button services__button" href="#">Записаться</a>
-                  </div>
-                  
-                  <div class="tab-pane services__tab services__tab--fourth fade" id="face" name="face" role="tabpanel" aria-labelledby="face-tab">
-                      <h3 class="tab__name section__title">Процедуры для лица</h3>
-                    <ul class="tab__items">
-                        <li class="tab__item">Стрижка волос1</li> 
-                        <li class="tab__item">Покраска волос1</li>
-                        <li class="tab__item">Покраска прядей волос1</li>
-                        <li class="tab__item">Химическая завивка</li>
-                        <li class="tab__item">Вечерняя и свадебная прическа</li>
-                        <li class="tab__item">Плетение французских косичек</li>
-                        <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
-                        <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
-                        <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
-                    </ul>
-                    <a class="button services__button services__button--white" href="#">Узнать цены</a>
-                    <a class="button services__button" href="#">Записаться</a>
-                  </div>
+                    <div id="pane-B" class="card tab-pane  fade" role="tabpanel" aria-labelledby="tab-B">
+                        <div class="card-header" role="tab" id="heading-B">
+                            <a data-toggle="collapse" class="services__list services__list--left services__list--second" href="#collapse-B" data-parent="#content" aria-expanded="true"
+                                    aria-controls="collapse-B">
+                                    <img class="services__img" src="./assets/img/services/serv2.png" alt="Услуги для рук и ног">
+                                    <i class="fas faCircle fa-chevron-right"></i>
+                                    <p class="services__name">Услуги для <br> рук и ног</p>
+                            </a>
+                        </div>
+                        <div id="collapse-B" class="collapse services__tabs" role="tabpanel" aria-labelledby="heading-B">
+                            <div class="card-body services__tab services__tab--second">
+                                <h3 class="tab__name section__title"><a name="home">Услуги для рук и ног</a></h3>
+                                <ul class="tab__items">
+                                    <li class="tab__item">Стрижка волос</li>
+                                    <li class="tab__item">Покраска волос</li>
+                                    <li class="tab__item">Покраска прядей волос</li>
+                                    <li class="tab__item">Химическая завивка</li>
+                                    <li class="tab__item">Вечерняя и свадебная прическа</li>
+                                    <li class="tab__item">Плетение французских косичек</li>
+                                    <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
+                                    <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
+                                    <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
+                                </ul>
+                                <a class="button services__button services__button--white shadow" href="#">Узнать цены</a>
+                                <a class="button services__button shadow" href="#">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
 
-                  <div class="tab-pane services__tab services__tab--fifth fade" id="waxing" name="waxing" role="tabpanel" aria-labelledby="waxing-tab">
-                      <h3 class="tab__name section__title">Ваксация</h3>
-                    <ul class="tab__items">
-                        <li class="tab__item">Стрижка волос1</li> 
-                        <li class="tab__item">Покраска волос1</li>
-                        <li class="tab__item">Покраска прядей волос1</li>
-                        <li class="tab__item">Химическая завивка</li>
-                        <li class="tab__item">Вечерняя и свадебная прическа</li>
-                        <li class="tab__item">Плетение французских косичек</li>
-                        <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
-                        <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
-                        <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
-                    </ul>
-                    <a class="button services__button services__button--white" href="#">Узнать цены</a>
-                    <a class="button services__button" href="#">Записаться</a>
-                  </div>
+                    <div id="pane-C" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-C">
+                        <div class="card-header" role="tab" id="heading-C">
+                            <h5 class="mb-0">
+                                    <a data-toggle="collapse" class="services__list services__list--right services__list--third" href="#collapse-C" data-parent="#content" aria-expanded="true"
+                                    aria-controls="collapse-C">
+                                    <img class="services__img" src="./assets/img/services/serv3.png" alt="Процедуры для тела">
+                                    <i class="fas faCircle fa-chevron-right"></i>
+                                    <p class="services__name">Процедуры <br> для тела</p>
+                            </a>
+                            </h5>
+                        </div>
+                        <div id="collapse-C" class="collapse services__tabs" role="tabpanel" aria-labelledby="heading-C">
+                            <div class="card-body services__tab services__tab--third">
+                                <h3 class="tab__name section__title"><a name="home">Процедуры для тела</a></h3>
+                                <ul class="tab__items">
+                                    <li class="tab__item">Стрижка волос</li>
+                                    <li class="tab__item">Покраска волос</li>
+                                    <li class="tab__item">Покраска прядей волос</li>
+                                    <li class="tab__item">Химическая завивка</li>
+                                    <li class="tab__item">Вечерняя и свадебная прическа</li>
+                                    <li class="tab__item">Плетение французских косичек</li>
+                                    <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
+                                    <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
+                                    <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
+                                </ul>
+                                <a class="button services__button services__button--white shadow" href="#">Узнать цены</a>
+                                <a class="button services__button shadow" href="#">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
 
-                  <div class="tab-pane services__tab services__tab--sixth fade" id="eyebrow" name="eyebrow" role="tabpanel" aria-labelledby="eyebrow-tab">
-                      <h3 class="tab__name section__title">Брови и ресницы</h3>
-                    <ul class="tab__items">
-                        <li class="tab__item">Стрижка волос1</li> 
-                        <li class="tab__item">Покраска волос1</li>
-                        <li class="tab__item">Покраска прядей волос1</li>
-                        <li class="tab__item">Химическая завивка</li>
-                        <li class="tab__item">Вечерняя и свадебная прическа</li>
-                        <li class="tab__item">Плетение французских косичек</li>
-                        <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
-                        <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
-                        <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
-                    </ul>
-                    <a class="button services__button services__button--white" href="#">Узнать цены</a>
-                    <a class="button services__button" href="#">Записаться</a>
-                  </div>
+                    <div id="pane-D" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-D">
+                        <div class="card-header" role="tab" id="heading-D">
+                            <h5 class="mb-0">
+                                    <a data-toggle="collapse" class="services__list services__list--left services__list--fourth" href="#collapse-D" data-parent="#content" aria-expanded="true"
+                                    aria-controls="collapse-D">
+                                    <img class="services__img" src="./assets/img/services/serv4.png" alt="Процедуры для лица">
+                                    <i class="fas faCircle fa-chevron-right"></i>
+                                    <p class="services__name">Процедуры <br> для лица</p>
+                            </a>
+                            </h5>
+                        </div>
+                        <div id="collapse-D" class="collapse services__tabs" role="tabpanel" aria-labelledby="heading-D">
+                            <div class="card-body services__tab services__tab--fourth">
+                                <h3 class="tab__name section__title"><a name="home">Процедуры для лица</a></h3>
+                                <ul class="tab__items">
+                                    <li class="tab__item">Стрижка волос</li>
+                                    <li class="tab__item">Покраска волос</li>
+                                    <li class="tab__item">Покраска прядей волос</li>
+                                    <li class="tab__item">Химическая завивка</li>
+                                    <li class="tab__item">Вечерняя и свадебная прическа</li>
+                                    <li class="tab__item">Плетение французских косичек</li>
+                                    <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
+                                    <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
+                                    <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
+                                </ul>
+                                <a class="button services__button services__button--white shadow" href="#">Узнать цены</a>
+                                <a class="button services__button shadow" href="#">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="pane-E" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-E">
+                        <div class="card-header" role="tab" id="heading-E">
+                            <h5 class="mb-0">
+                                    <a data-toggle="collapse" class="services__list services__list--right services__list--first" href="#collapse-E" data-parent="#content" aria-expanded="true"
+                                    aria-controls="collapse-E">
+                                    <img class="services__img" src="./assets/img/services/serv5.png" alt="Ваксация">
+                                    <i class="fas faCircle fa-chevron-right"></i>
+                                    <p class="services__name">Ваксация</p>
+                            </a>
+                            </h5>
+                        </div>
+                        <div id="collapse-E" class="collapse services__tabs" role="tabpanel" aria-labelledby="heading-E">
+                            <div class="card-body services__tab services__tab--fifth">
+                                <h3 class="tab__name section__title"><a name="home">Ваксация</a></h3>
+                                <ul class="tab__items">
+                                    <li class="tab__item">Стрижка волос</li>
+                                    <li class="tab__item">Покраска волос</li>
+                                    <li class="tab__item">Покраска прядей волос</li>
+                                    <li class="tab__item">Химическая завивка</li>
+                                    <li class="tab__item">Вечерняя и свадебная прическа</li>
+                                    <li class="tab__item">Плетение французских косичек</li>
+                                    <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
+                                    <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
+                                    <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
+                                </ul>
+                                <a class="button services__button services__button--white shadow" href="#">Узнать цены</a>
+                                <a class="button services__button shadow" href="#">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="pane-F" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-F">
+                        <div class="card-header" role="tab" id="heading-F">
+                            <h5 class="mb-0">
+                                    <a data-toggle="collapse" class="services__list services__list--left services__list--sixth" href="#collapse-F" data-parent="#content" aria-expanded="true"
+                                    aria-controls="collapse-F">
+                                    <img class="services__img" src="./assets/img/services/serv6.png" alt="ПАРИКМАХЕРСКИЕ УСЛУГИ">
+                                    <i class="fas faCircle fa-chevron-right"></i>
+                                    <p class="services__name">Брови <br> и ресницы</p>
+                            </a>
+                            </h5>
+                        </div>
+                        <div id="collapse-F" class="collapse services__tabs" role="tabpanel" aria-labelledby="heading-F">
+                            <div class="card-body services__tab services__tab--sixth">
+                                <h3 class="tab__name section__title"><a name="home">Брови и ресницы</a></h3>
+                                <ul class="tab__items">
+                                    <li class="tab__item">Стрижка волос</li>
+                                    <li class="tab__item">Покраска волос</li>
+                                    <li class="tab__item">Покраска прядей волос</li>
+                                    <li class="tab__item">Химическая завивка</li>
+                                    <li class="tab__item">Вечерняя и свадебная прическа</li>
+                                    <li class="tab__item">Плетение французских косичек</li>
+                                    <li class="tab__item">Процедура BOUFFANT (увеличение объема)</li>
+                                    <li class="tab__item">Процедура BOTOX LIKE (увлажнение и укрепление)</li>
+                                    <li class="tab__item">Кератиновое выпрямление волос COCOCHOCO</li>
+                                </ul>
+                                <a class="button services__button services__button--white shadow" href="#">Узнать цены</a>
+                                <a class="button services__button shadow" href="#">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-          </div>
+            </div>
 
         </section>
+        <section class="make-up title-line">
+                <a class="anchor" name="make-up"></a>
+            <h2 class="make-up__title section__title">make-up школа <span class="section__title-lt">make-up school</span></h2>
+        </section>
     </main>
-    <footer style="height: 400px; background: red">   </footer>
-    <script src="./js/script.js"></script>
+    <footer style="height: 400px; background: red"> </footer>
     <script type="text/javascript" src="https://w231343.yclients.com/widgetJS" charset="UTF-8"></script>
+    <script src="./js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
