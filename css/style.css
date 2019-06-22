@@ -1052,8 +1052,10 @@ a[aria-expanded="true"] i {
     }
 
     .services__list {
-        width: 100%;
+        width: inherit;
+        height: 220px;
     }
+
 
     .services__img {
         width: 24%;
@@ -1092,9 +1094,10 @@ a[aria-expanded="true"] i {
     }
 
     .services__list i {
-        right: calc(50vw - 56px);
-        bottom: 15px;
+        top: 65px;
         transform: rotate(-90deg);
+        position: relative;
+        left: 40vw;
     }
 
     .services__tab--first::before {
