@@ -307,10 +307,6 @@ a:hover {
 
 /* services__list--first  */
 
-/* .services__list--first img {
-    margin-left: -20px;
-} */
-
 .services__list--first i {
     right: 37px;
     bottom: 125px;
@@ -606,16 +602,16 @@ a.active p {
 }
 
 a.active i {
-    background: #f77a9e;
+
     transform: rotate(90deg);
 }
 
 a.active p {
-    color: #f77a9e;
+
 }
 
 a[aria-expanded="true"] i {
-    background: #f77a9e;
+
     transform: rotate(90deg);
 }
 
